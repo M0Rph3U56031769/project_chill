@@ -45,4 +45,5 @@ df1['json'] = df1['Premises Address'].map(lambda  x: query_address(x))
 
 # drop empty responses
 df2 = df1[df1['json'].map(lambda d: len(d)) > 0].copy()
+df2['lat'] =
 print(df2.shape[0])
